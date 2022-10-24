@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        @font-face {
+            font-family: CeraPro;
+            src: url(fonts/CeraPro-Regular.ttf),
+                 url(fonts/CeraPro-Medium.ttf),
+                 url(fonts/CeraPro-Bold.ttf)
+
+        }
+        body {
+            margin: 0px;
+            font-family: CeraPro
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: #2AA3E0;
+            height: 74px;
+            max-height: 74px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .navbar-element {
+            margin-left: 18px;
+        }
+        .phone {
+            background-color: #FFFFFF;
+            color: #2AA3E0;
+            width: 169px;
+            height: 31px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 79px;
+            margin-bottom: 3px;
+        }
+        .round {
+            border-radius: 50%;
+        }
+        .logo {
+            width: 129px;
+            height: 110px;
+            background-color: #FFFFFF;
+            overflow: visible;
+            border-bottom-right-radius: 17px;
+            border-bottom-left-radius: 17px;
+            position: absolute;
+            margin-left: 79px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .company {
+            background-color: #1DB4FF;
+            height: 646px;
+            width: 100%;
+        }
+        .about-company {
+            text-transform: uppercase;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-top: 172px;
+            margin-left: 79px;
+            display: inline-block;
+        }
+        .company-description {
+            color: #FFFFFF;
+            margin-left: 79px;
+            width: 704px;
+            height: 138px;
+        }
+    </style>
+</head>    
+<body>
+    <div class="logo">
+        <img src="images/logo_finkon.svg" alt="">
+    </div>
+    <div class="navbar">
+        <a class="navbar-element" href="#">
+            <img class="round" src="images/instagram.jpg" alt="">
+        </a>
+        <a class="navbar-element" href="#">
+            <img class="round" src="images/email.jpg" alt="">
+        </a>
+        <div class="navbar-element phone">
+            <img src="images/phone.jpg" alt="" style="margin-right: 3px">
+            <span style="font-size: 15px; font-weight: bolder;">996 (555) 555 555</span>
+        </div>
+    </div>
+    <div class="company">
+        <span class="about-company">О компании</span>
+        <p class="company-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</body>
+</html>

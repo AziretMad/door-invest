@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @font-face {
             font-family: CeraPro;
@@ -61,7 +61,7 @@
         }      
         .company {
             background-color: #1DB4FF;
-            height: 580px;
+            height: 670px;
             width: 100%;
             position: relative;   
         }
@@ -73,7 +73,7 @@
             width: 0;
             height: 0;
             border-top: 66.19px solid #1DB4FF;
-            border-right: 674.5px solid transparent;
+            border-right: calc(100vw / 2) solid transparent;
         }
         .company:after {
             content: '';
@@ -83,7 +83,7 @@
             width: 0;
             height: 0;
             border-top: 66.19px solid #1DB4FF;
-            border-left: calc(98.7vw / 2) solid transparent;
+            border-left: calc(100vw / 2) solid transparent;
         }
         .about-company {
             text-transform: uppercase;
@@ -231,11 +231,27 @@
             line-height: 21px;
             text-align: center;
         }
+        .footer {
+            height: 113px;
+            width: 100%;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .footer span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 17.24px;
+        }
     </style>
 </head>    
 <body>
     <div class="logo">
-        <img src="images/logo_finkon.svg" alt="">
+        <img src="images/лого.jpg" alt="">
     </div>
     <div class="navbar">
         <a class="navbar-element" href="#">
@@ -280,6 +296,15 @@
             <input type="text" placeholder="электронная почта">
             <button type="submit">Оставить заявку</button>
         </form>
+        <footer class="footer">
+            <span>контакты</span>
+            <div>
+                <a><img src="images/instagram.jpg" alt=""></a>
+                <a><img src="images/whatsapp.jpg" alt=""></a>
+                <a><img src="images/whatsapp.jpg" alt=""></a>
+                <a><img src="images/email.jpg" alt=""></a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @font-face {
@@ -46,7 +47,7 @@
             height: 32.66px;
         }
         .logo {
-            width: 129px;
+            width: 301px;
             height: 110px;
             background-color: #FFFFFF;
             overflow: visible;
@@ -56,7 +57,7 @@
             margin-left: 79px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             z-index: 1;
         }      
         .company {
@@ -99,10 +100,10 @@
         .company-description {
             color: #FFFFFF;
             margin-left: 79px;
-            width: 704px;
-            height: 138px;
-            line-height: 22.63px;
-            opacity: 0.5;
+            max-width: 1282px;
+            height: 264px;
+            line-height: 32.68px;
+            font-size: 26px;
         }
         .services-feedbacks {
             width: 100%;
@@ -124,7 +125,7 @@
         .services-block {
             background: #FFFFFF;
             border-radius: 10px;
-            width: 1248px;
+            max-width: 1248px;
             height: 433px;
             margin-top: 20px;
             display: grid;
@@ -232,6 +233,7 @@
             text-align: center;
         }
         .footer {
+            margin-top: auto;
             height: 113px;
             width: 100%;
             background: #FFFFFF;
@@ -250,8 +252,9 @@
     </style>
 </head>    
 <body>
+    <title>Доор Investments</title>
     <div class="logo">
-        <img src="images/лого.jpg" alt="">
+        <img src="images/door.svg" alt="">
     </div>
     <div class="navbar">
         <a class="navbar-element" href="#">
@@ -267,17 +270,19 @@
     </div>
     <div class="company">
         <span class="about-company">О компании</span>
-        <p class="company-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="company-description">Компания  DООR INVESTMENTS основана профессионалами в сфере подготовки инвестиционных проектов, которые имеют значительный опыт работы с крупнейшими предприятиями 
+            Кыргызской Республики.<br/>
+            В своей деятельности компания руководствуется лучшими мировыми практиками в сфере финансов 
+            и постоянно повышает уровень своих знаний.
+            Качественная работа невозможна без наличия доверия между партнерами, поэтому мы гарантируем высокое качество наших услуг и полную конфиденциальность.
+            </p>
     </div>
     <div class="services-feedbacks">
         <span class="services-title">Наши услуги</span>
         <div class="services-block">
-            <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
         </div>
-        <span class="feedbacks-title">Отзывы</span>
+        <!-- <span class="feedbacks-title">Отзывы</span>
         <div class="feedbacks">
             <div class="feedback-block">
                 <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -288,7 +293,7 @@
             <div class="feedback-block">
                 <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-        </div>
+        </div> -->
         <form class="application-form">
             <span>Оставьте заявку</span>
             <input type="text" placeholder="ф.и.о">

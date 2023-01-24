@@ -134,7 +134,7 @@ body {
 }
 .services-block p {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 38px;
     opacity: 50%;
     height: 89.78073120117188px;
@@ -390,7 +390,7 @@ body {
     background-color: rgba(255, 255, 255, .9);
   }
   
-  @media (max-width: 1000px) {
+  /* @media (max-width: 1000px) {
     .slider {
       --items-per-screen: 3;
     }
@@ -399,5 +399,156 @@ body {
   @media (max-width: 500px) {
     .slider {
       --items-per-screen: 2;
+    }
+  } */
+
+  @media (max-width: 500px) {
+    :root {
+      --boundary-padding: 21px;
+    }
+
+    .navbar {
+      height: 58.85px;
+      max-height: 58.85px;
+    }
+
+    .logo img {
+      width: 83.6px;
+      height: 24.91px;
+    }
+
+    .logo {
+      width: 88.86px;
+      height: 46px;
+      border-bottom-right-radius: 11px;
+      border-bottom-left-radius: 11px;
+      margin-left: var(--boundary-padding);
+    }
+
+    .phone {
+      margin-right: var(--boundary-padding);
+    }
+
+    .about-company {
+      font-size: 30px;
+      margin-left: var(--boundary-padding);
+      margin-top: 34px;
+    }
+
+    .company-description {
+      margin-left: var(--boundary-padding);
+      font-size: 16px;
+      line-height: normal;
+      max-width: 349.08px;
+      height: 339.63px;
+      margin-top: 8px;
+    }
+
+    .company {
+      height: 380px;
+    }
+
+    .company:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 50%;
+      width: 0;
+      height: 0;
+      border-top: 40px solid #1DB4FF;
+      border-right: calc(100vw / 2) solid transparent;
+    }
+
+    .company:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: 40px solid #1DB4FF;
+      border-left: calc(100vw / 2) solid transparent;
+    }
+
+    .services-title {
+      font-size: 28px;
+      margin-top: 45px;
+    }
+
+    .services-block {
+      border-radius: 0;
+      max-width: 100%;
+      margin-top: 23px;
+      max-height: 950px;
+    }
+
+    .services-block .first-title {
+      font-size: 16px;
+      opacity: 100%;
+      line-height: normal;
+      width: 330.25px;
+      padding: 12px 0px 10px 0px;  
+    }
+
+    .services-block .second-title {
+      font-size: 16px;
+      opacity: 100%;
+      line-height: normal;
+      width: 330.25px;
+      padding: 0px 0px 10px 0px;
+    }
+
+    .services-block span {
+      font-size: 14px;
+      line-height: normal;
+      width: 350.16px;
+      top: 3px;
+      padding: 8px 8.88px 10px 8.88px;
+    }
+
+    .application-form {
+      max-width: 100%;
+      border-radius: 0;
+      height: 394.49px;
+    }
+
+    .application-form span {
+      width: 354.04px;
+      font-size: 16px;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .application-form input {
+      width: 298.47px;
+      height: 39.48px;
+    }
+
+    .application-form input::placeholder {
+      letter-spacing: 0.8px;
+    }
+
+    .application-form button {
+      width: 298.47px;
+    }
+
+    .footer {
+      height: 89.32px;
+    }
+
+    .footer span {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .contacts {
+      gap: 26.274px
+    }
+
+    .contacts img {
+      width: 26.01px;
+      height: 25.53px;
     }
   }

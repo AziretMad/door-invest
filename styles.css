@@ -402,7 +402,7 @@ body {
     }
   } */
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     :root {
       --boundary-padding: 21px;
     }
@@ -439,9 +439,9 @@ body {
       margin-left: var(--boundary-padding);
       font-size: 16px;
       line-height: normal;
-      max-width: 349.08px;
       height: 339.63px;
       margin-top: 8px;
+      margin-right: var(--boundary-padding);
     }
 
     .company {
@@ -487,7 +487,7 @@ body {
       opacity: 100%;
       line-height: normal;
       width: 330.25px;
-      padding: 12px 0px 10px 0px;  
+      padding: 12px 0px 10px 0px;
     }
 
     .services-block .second-title {

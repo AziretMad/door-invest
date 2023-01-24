@@ -98,3 +98,7 @@ document.addEventListener("click", e => {
       setTimeout(timeoutFunc, delay)
     }
   }
+
+  function viewPdf(src) {
+    window.open(src, "_blank")
+  }

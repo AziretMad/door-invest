@@ -77,13 +77,27 @@
               </button>
             </div>
         </div>
-        <form class="application-form">
+        <form class="application-form" id="form">
             <span>Будем рады совместно решать сложные проблемы
                 и участвовать в развитии Вашей компании</span>
-            <input type="text" placeholder="ф.и.о">
-            <input type="text" placeholder="телефон">
-            <input type="text" placeholder="электронная почта">
-            <button type="submit">Оставить заявку</button>
+            <div class="form-field">
+                <input type="text" placeholder="ф.и.о" name="full-name" id="full-name">
+                <br>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="телефон" name="phone-number" id="phone-number">
+                <br>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="электронная почта" name="email" id="email">
+                <br>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <button type="submit">Оставить заявку</button>
+            </div>
         </form>
         <footer class="footer">
             <span>контакты</span>
@@ -96,5 +110,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="js/form-validation.js"></script>
 </body>
 </html>

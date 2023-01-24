@@ -1,271 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Доор Investments</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @font-face {
-            font-family: CeraPro;
-            src: url(fonts/CeraPro-Regular.ttf),
-                 url(fonts/CeraPro-Medium.ttf),
-                 url(fonts/CeraPro-Bold.ttf)
-
-        }
-        body {
-            margin: 0px;
-            font-family: CeraPro;
-            overflow-x: hidden;
-            --scrollbar-size: calc(100vw - 100%)
-        }
-        .navbar{
-            overflow: hidden;
-            background-color: #2AA3E0;
-            height: 74px;
-            max-height: 74px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-        }
-        .navbar-element {
-            margin-left: 18px;
-        }
-        .phone {
-            background-color: #FFFFFF;
-            color: #2AA3E0;
-            width: 169px;
-            height: 32.66px;
-            border-radius: 7px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 79px;
-            margin-bottom: 3px;
-        }
-        .narbar-img {
-            width: 33.24px;
-            height: 32.66px;
-        }
-        .logo {
-            width: 301px;
-            height: 110px;
-            background-color: #FFFFFF;
-            overflow: visible;
-            border-bottom-right-radius: 17px;
-            border-bottom-left-radius: 17px;
-            position: absolute;
-            margin-left: 79px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            z-index: 1;
-        }      
-        .company {
-            background-color: #1DB4FF;
-            height: 670px;
-            width: 100%;
-            position: relative;   
-        }
-        .company:before {
-            content: '';
-            position: absolute;
-            top: 100%;
-            right: 50%;
-            width: 0;
-            height: 0;
-            border-top: 66.19px solid #1DB4FF;
-            border-right: calc(100vw / 2) solid transparent;
-        }
-        .company:after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-top: 66.19px solid #1DB4FF;
-            border-left: calc(100vw / 2) solid transparent;
-        }
-        .about-company {
-            text-transform: uppercase;
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 700px;
-            font-weight: bold;
-            color: #FFFFFF;
-            margin-top: 172px;
-            margin-left: 79px;
-            display: inline-block;
-        }
-        .company-description {
-            color: #FFFFFF;
-            margin-left: 79px;
-            max-width: 1282px;
-            height: 264px;
-            line-height: 32.68px;
-            font-size: 26px;
-        }
-        .services-feedbacks {
-            width: 100%;
-            height: 1424px;
-            background: url(images/background.jpg) no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        .services-title {
-            text-transform: uppercase;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 700;
-            color: #FFFFFF;
-            margin-top: 50px;
-        }
-        .services-block {
-            background: #FFFFFF;
-            border-radius: 10px;
-            max-width: 1248px;
-            height: 433px;
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: auto auto;
-            row-gap: 66px;
-            column-gap: 78px;
-        }
-        .services-text {
-            font-style: normal;
-            font-size: 15px;
-            line-height: 19px;
-            opacity: 0.5;
-            width: 549px;
-            height: 114px;
-        }
-        .feedbacks-title {
-            text-transform: uppercase;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 700;
-            color: #FFFFFF;
-            margin-top: 80px;
-        }
-        .feedbacks {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 54.81px;
-            margin-top: 30px;
-        }
-        .feedback-block {
-            background: #FFFFFF;
-            border-radius: 10px;
-            width: 379.46px;
-            height: 390.23px;
-        }
-        .feedback-text {
-            width: 318.67px;
-            height: 390.23px;
-            size: 15px;
-            line-height: 18.85px;
-            font-weight: 400;
-            margin-top: 60.76px;
-            margin-left: 22.73px;
-            opacity: 0.5;
-        }
-        .application-form {
-            width: 460px;
-            height: 281px;
-            background: #43B0E7;
-            border-radius: 10px;
-            margin-top: 114.31px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        .application-form span {
-            color: #FFFFFF;
-            text-transform: uppercase;
-            font-size: 17px;
-            font-style: normal;
-            font-weight: 700;
-            margin-top: 16px;
-        }
-        .application-form input {
-            width: 377px;
-            height: 41px;
-            margin-top: 10px;
-            border-radius: 10px;
-            border: 1px solid #FFFFFF;
-            background-color: #43B0E7;
-            color: #FFFFFF;
-            padding-left: 17px;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 19px;
-            -moz-box-sizing: border-box; 
-            -webkit-box-sizing: border-box; 
-            box-sizing: border-box; 
-        }
-        .application-form input::placeholder {
-            color: #FFFFFF;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 19px;
-        } 
-        .application-form input:focus {
-            outline: none;
-        } 
-        .application-form button {
-            width: 377px;
-            height: 48px;
-            background: #FFFFFF;
-            border-radius: 10px;
-            margin-top: 17px;
-            margin-bottom: 25px;
-            border: 1px solid #FFFFFF;
-            text-transform: lowercase;
-            color: #43B0E7;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 21px;
-            text-align: center;
-        }
-        .footer {
-            margin-top: auto;
-            height: 113px;
-            width: 100%;
-            background: #FFFFFF;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        .footer span {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 25px;
-            text-align: center;
-            margin-bottom: 17.24px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>    
 <body>
-    <title>Доор Investments</title>
     <div class="logo">
         <img src="images/door.svg" alt="">
     </div>
     <div class="navbar">
         <a class="navbar-element" href="#">
-            <img src="images/ig.svg" style="width: 33.24px; height: 32.66px" alt="">
+            <img src="images/facebook.svg" class="navbar-img" alt="">
+        </a>
+        <a class="navbar-element" href="#">
+            <img src="images/instagram.svg" class="navbar-img" alt="">
         </a>
         <a class="navbar-element" href="mailto:aziretmadumar@gmail.com">
-            <img src="images/email.svg" style="width: 33.24px; height: 32.66px" alt="">
+            <img src="images/email.svg" class="navbar-img" alt="">
         </a>
         <div class="navbar-element phone">
-            <img src="images/phone.jpg" alt="" style="margin-right: 3px">
-            <span style="font-size: 15px; font-weight: bolder;">996 (555) 555 555</span>
+            <img src="images/phone.svg" alt="" style="margin-right: 3px">
+            <span style="font-size: 13px; font-weight: bolder; line-height: 13px;">0705 201 555<br/>0557 201 555</span>
         </div>
     </div>
     <div class="company">
@@ -277,25 +36,44 @@
             Качественная работа невозможна без наличия доверия между партнерами, поэтому мы гарантируем высокое качество наших услуг и полную конфиденциальность.
             </p>
     </div>
-    <div class="services-feedbacks">
+    <div class="services">
         <span class="services-title">Наши услуги</span>
         <div class="services-block">
-            
+            <p>Мы предоставляем широкий спектр услуг в сфере финансов для наших партнеров:</p>
+            <span>подготовка экономического обоснования проектов и сделок</span><br>
+            <span>подготовка финансовой модели</span><br>
+            <span>подготовка кратких презентаций для потенциальных инвесторов</span><br>
+            <span>анализ финансового состояния компании</span><br>
+            <span>оценка стоимости компании</span><br>
+            <p>Когда наши услуги могут быть полезны:</p>
+            <span>привлечение финансирования от фондов, банков, доноров, 
+                акселерационных программ, международных финансовых институтов</span><br>
+            <span>продажа бизнеса</span><br>
+            <span>принятие управленческих решений по инвестированию</span><br>
+            <span>решение спорных ситуаций с партнерами</span><br>
+            <span>оппонирование финансовому директору компании</span><br>
+            <span>подготовка антикризисного плана</span><br>
+            <span style="margin-bottom: 60px;">передача активов в управление</span><br>
         </div>
-        <!-- <span class="feedbacks-title">Отзывы</span>
+        <span class="feedbacks-title">Отзывы</span>
         <div class="feedbacks">
-            <div class="feedback-block">
-                <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+            </button>
+            <div class="slider">
+                <img src="images/Алма-Агро_page-0001.jpg" type="">
+                <img src="images/Благодарственное письмо0001_page-0001.jpg" type="">
+                <img src="images/Рекоменд_Доор_Инвестментс_page-0001.jpg" type="">
+                <img src="images/Рекомендация Прод Импекс_page-0001.jpg" type="">
+                <img src="images/Общество с ограниченной_page-0001.jpg" type="">
             </div>
-            <div class="feedback-block">
-                <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="feedback-block">
-                <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div> -->
+            <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+            </button>
+        </div>
         <form class="application-form">
-            <span>Оставьте заявку</span>
+            <span>Будем рады совместно решать сложные проблемы
+                и участвовать в развитии Вашей компании</span>
             <input type="text" placeholder="ф.и.о">
             <input type="text" placeholder="телефон">
             <input type="text" placeholder="электронная почта">
@@ -303,11 +81,12 @@
         </form>
         <footer class="footer">
             <span>контакты</span>
-            <div>
-                <a><img src="images/instagram.jpg" alt=""></a>
-                <a><img src="images/whatsapp.jpg" alt=""></a>
-                <a><img src="images/whatsapp.jpg" alt=""></a>
-                <a><img src="images/email.jpg" alt=""></a>
+            <div class="contacts">
+                <a><img src="images/fb.svg" alt=""></a>
+                <a><img src="images/ig.svg" alt=""></a>
+                <a><img src="images/wt.svg" alt=""></a>
+                <a><img src="images/tg.svg" alt=""></a>
+                <a><img src="images/em.svg" alt=""></a>
             </div>
         </footer>
     </div>

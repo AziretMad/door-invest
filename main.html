@@ -5,8 +5,9 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>    
 <body>
     <div class="logo">
@@ -78,12 +79,16 @@
             </div>
         </div>
 
-        <form class="application-form" id="form" action="https://docs.google.com/forms/d/e/1FAIpQLScs16wxJWnm8MYhNCMUrguuyVfiyw2HZeme3sh6UrwfAWONTg/formResponse">
+        <script type="text/javascript">var submitted = false</script>
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted) {Swal.fire('Good job!','You clicked the button!','success')}"></iframe>
+
+        <form class="application-form" id="form" action="https://docs.google.com/forms/d/e/1FAIpQLScs16wxJWnm8MYhNCMUrguuyVfiyw2HZeme3sh6UrwfAWONTg/formResponse"
+        method="post" target="hiddenConfirm" onsubmit="submitted=true">
             <span>Будем рады совместно решать сложные проблемы
                 и участвовать в развитии Вашей компании</span>
                 <input type="text" required placeholder="ф.и.о" name="entry.1256080883" id="full-name">
                 <input type="text" required placeholder="телефон" name="entry.2081169101" id="phone-number">
-                <input type="text" required placeholder="электронная почта" name="entry.1109030748" id="email">
+                <input type="email" required placeholder="электронная почта" name="entry.1109030748" id="email">
                 <button type="submit">Оставить заявку</button>
         </form>
 
@@ -98,5 +103,13 @@
             </div>
         </footer>
     </div>
+
+    <script src="sweetalert2.min.js"></script>
+    <script>
+        function popup() {
+            Swal.fire('Good job!','You clicked the button!','success')
+        }
+    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

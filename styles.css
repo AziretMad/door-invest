@@ -45,7 +45,7 @@ body {
 }
 .logo {
     width: 301px;
-    height: 110px;
+    height: 140px;
     background-color: #FFFFFF;
     overflow: visible;
     border-bottom-right-radius: 17px;
@@ -291,6 +291,7 @@ body {
   border: 1px solid 	#727272;
   background:	#727272;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .footer {
@@ -525,7 +526,7 @@ body {
 
   .logo {
     width: 88.86px;
-    height: 46px;
+    height: 47px;
     border-bottom-right-radius: 11px;
     border-bottom-left-radius: 11px;
     margin-left: var(--boundary-padding);

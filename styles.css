@@ -126,14 +126,14 @@ body {
     width: 100%;
     max-height: 1127.88px;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: left;
 }
-.services-block p {
-    margin-top: 43px;
+.services-block .first-title {
+    margin-top: 45px;
     font-size: 30px;
     font-weight: 700;
     line-height: 38px;
@@ -145,6 +145,20 @@ body {
     top: 1094.732666015625px;
     border-radius: nullpx;
 }
+
+.services-block .second-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  opacity: 50%;
+  height: 89.78073120117188px;
+  max-width: 612.9401245117188px;
+  width: 100%;
+  left: 413.5299377441406px;
+  top: 1094.732666015625px;
+  border-radius: nullpx;
+}
+
 .services-block span {
     max-width: 832.78px;
     width: 100%;
@@ -179,7 +193,7 @@ body {
     font-style: normal;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 80px;
+    margin-top: 150px;
     margin-bottom: 60px;
 }
 
@@ -202,14 +216,14 @@ body {
 .application-form {
     max-width: 614.46px;
     width: 100%;
-    height: 315px;
+    height: 325px;
     background: #43B0E7;
     border-radius: 10px;
-    margin-top: 114.31px;
+    margin-top: 170px;
+    margin-bottom: 180px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 .application-form span {
     margin-top: 19.8px;
@@ -421,246 +435,255 @@ body {
     --items-per-screen: 1;
   }
 }
+  
+.handle {
+  border: none;
+  border-radius: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, .25);
+  z-index: 10;
+  margin: var(--img-gap) 0;
+  width: var(--handle-size);
+  cursor: pointer;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0;
+  transition: background-color 150ms ease-in-out;
+}
 
-  
-  .handle {
-    border: none;
-    border-radius: 1rem;
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, .25);
-    z-index: 10;
-    margin: var(--img-gap) 0;
-    width: var(--handle-size);
-    cursor: pointer;
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    line-height: 0;
-    transition: background-color 150ms ease-in-out;
-  }
-  
-  .left-handle {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .right-handle {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  .handle:hover,
-  .handle:focus {
-    background-color: rgba(255, 255, 255, .5);
-  }
-  
-  .text {
-    transition: transform 150ms ease-in-out;
-  }
-  
-  .handle:hover .text,
-  .handle:focus .text {
-    transform: scale(1.2);
-  }
-  
-  .header {
-    display: none;
-    justify-content: space-between;
-    padding: .5rem calc(var(--img-gap) * 2 + var(--handle-size));
-    align-items: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .progress-bar {
-    display: flex;
-    gap: .25rem;
-  }
-  
-  .progress-item {
-    flex: 0 0 1.5rem;
-    min-width: 1.5rem;
-    height: .5rem;
-    background-color: rgba(255, 255, 255, .5);
-  }
-  
-  .progress-item.active {
-    background-color: rgba(255, 255, 255, .9);
-  }
-  
-  .form-field small {
-    color: #dc3545;
+.left-handle {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.right-handle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.handle:hover,
+.handle:focus {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.text {
+  transition: transform 150ms ease-in-out;
+}
+
+.handle:hover .text,
+.handle:focus .text {
+  transform: scale(1.2);
+}
+
+.header {
+  display: none;
+  justify-content: space-between;
+  padding: .5rem calc(var(--img-gap) * 2 + var(--handle-size));
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.progress-bar {
+  display: flex;
+  gap: .25rem;
+}
+
+.progress-item {
+  flex: 0 0 1.5rem;
+  min-width: 1.5rem;
+  height: .5rem;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.progress-item.active {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.form-field small {
+  color: #dc3545;
+}
+
+.form-field.error input {
+  border-color: #dc3545;
+}
+
+.form-field.success input {
+  border-color: #FFFFFF;
+}
+
+.application-form.extra-height {
+  height: 330px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --boundary-padding: 21px;
   }
 
-  .form-field.error input {
-    border-color: #dc3545;
+  .navbar {
+    height: 58.85px;
+    max-height: 58.85px;
   }
 
-  .form-field.success input {
-    border-color: #FFFFFF;
+  .logo img {
+    width: 83.6px;
+    height: 24.91px;
+  }
+
+  .logo {
+    width: 88.86px;
+    height: 46px;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    margin-left: var(--boundary-padding);
+  }
+
+  .phone {
+    margin-right: var(--boundary-padding);
+  }
+
+  .about-company {
+    font-size: 30px;
+    margin-left: var(--boundary-padding);
+    margin-top: 34px;
+  }
+
+  .company-description {
+    margin-left: var(--boundary-padding);
+    font-size: 16px;
+    line-height: normal;
+    height: 339.63px;
+    margin-top: 8px;
+    margin-right: var(--boundary-padding);
+  }
+
+  .company {
+    height: 380px;
+  }
+
+  .company:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #1DB4FF;
+    border-right: calc(100vw / 2) solid transparent;
+  }
+
+  .company:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #1DB4FF;
+    border-left: calc(100vw / 2) solid transparent;
+  }
+
+  .services-title {
+    font-size: 28px;
+    margin-top: 45px;
+  }
+
+  .services-block {
+    border-radius: 0;
+    max-width: 100%;
+    margin-top: 23px;
+    max-height: 950px;
+  }
+
+  .services-block .first-title {
+    font-size: 16px;
+    opacity: 100%;
+    line-height: normal;
+    width: 330.25px;
+    padding: 12px 0px 10px 0px;
+    margin-top: 20px;
+  }
+
+  .services-block .second-title {
+    font-size: 16px;
+    opacity: 100%;
+    line-height: normal;
+    width: 330.25px;
+    padding: 0px 0px 10px 0px;
+    margin-top: 15px;
+  }
+
+  .services-block span {
+    font-size: 14px;
+    line-height: normal;
+    width: 350.16px;
+    top: 3px;
+    padding: 8px 8.88px 10px 8.88px;
+  }
+
+  .feedbacks-title {
+    font-size: 28px;
+    margin-top: 45px;
+    margin-bottom: 75px;
+  }
+
+  .application-form {
+    max-width: 100%;
+    border-radius: 0;
+    height: 370px;
+    margin-top: 114.31px;
+    margin-bottom: 0px;
   }
 
   .application-form.extra-height {
-    height: 330px;
+    height: 394.49px;
   }
 
-  @media (max-width: 700px) {
-    :root {
-      --boundary-padding: 21px;
-    }
-
-    .navbar {
-      height: 58.85px;
-      max-height: 58.85px;
-    }
-
-    .logo img {
-      width: 83.6px;
-      height: 24.91px;
-    }
-
-    .logo {
-      width: 88.86px;
-      height: 46px;
-      border-bottom-right-radius: 11px;
-      border-bottom-left-radius: 11px;
-      margin-left: var(--boundary-padding);
-    }
-
-    .phone {
-      margin-right: var(--boundary-padding);
-    }
-
-    .about-company {
-      font-size: 30px;
-      margin-left: var(--boundary-padding);
-      margin-top: 34px;
-    }
-
-    .company-description {
-      margin-left: var(--boundary-padding);
-      font-size: 16px;
-      line-height: normal;
-      height: 339.63px;
-      margin-top: 8px;
-      margin-right: var(--boundary-padding);
-    }
-
-    .company {
-      height: 380px;
-    }
-
-    .company:before {
-      content: '';
-      position: absolute;
-      top: 100%;
-      right: 50%;
-      width: 0;
-      height: 0;
-      border-top: 40px solid #1DB4FF;
-      border-right: calc(100vw / 2) solid transparent;
-    }
-
-    .company:after {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-top: 40px solid #1DB4FF;
-      border-left: calc(100vw / 2) solid transparent;
-    }
-
-    .services-title {
-      font-size: 28px;
-      margin-top: 45px;
-    }
-
-    .services-block {
-      border-radius: 0;
-      max-width: 100%;
-      margin-top: 23px;
-      max-height: 950px;
-    }
-
-    .services-block .first-title {
-      font-size: 16px;
-      opacity: 100%;
-      line-height: normal;
-      width: 330.25px;
-      padding: 12px 0px 10px 0px;
-    }
-
-    .services-block .second-title {
-      font-size: 16px;
-      opacity: 100%;
-      line-height: normal;
-      width: 330.25px;
-      padding: 0px 0px 10px 0px;
-    }
-
-    .services-block span {
-      font-size: 14px;
-      line-height: normal;
-      width: 350.16px;
-      top: 3px;
-      padding: 8px 8.88px 10px 8.88px;
-    }
-
-    .application-form {
-      max-width: 100%;
-      border-radius: 0;
-      height: 394.49px;
-    }
-
-    .application-form.extra-height {
-      height: 394.49px;
-    }
-
-    .application-form span {
-      width: 354.04px;
-      font-size: 16px;
-      margin-top: 25px;
-      margin-bottom: 30px;
-    }
-
-    .application-form input {
-      width: 298.47px;
-      height: 39.48px;
-    }
-
-    .application-form input::placeholder {
-      letter-spacing: 0.8px;
-    }
-
-    .application-form button {
-      width: 298.47px;
-    }
-
-    .footer {
-      height: 89.32px;
-    }
-
-    .footer span {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .contacts {
-      gap: 26.274px
-    }
-
-    .contacts img {
-      width: 26.01px;
-      height: 25.53px;
-    }
+  .application-form span {
+    width: 354.04px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
+
+  .application-form input {
+    width: 298.47px;
+    height: 39.48px;
+  }
+
+  .application-form input::placeholder {
+    letter-spacing: 0.8px;
+  }
+
+  .application-form button {
+    width: 298.47px;
+  }
+
+  .footer {
+    height: 89.32px;
+  }
+
+  .footer span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .contacts {
+    gap: 26.274px
+  }
+
+  .contacts img {
+    width: 26.01px;
+    height: 25.53px;
+  }
+}

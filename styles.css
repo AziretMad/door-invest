@@ -288,10 +288,11 @@ body {
 }
 
 .application-form button:hover {
-  border: 1px solid rgba(255, 255, 255, .5);;
-  background: rgba(255, 255, 255, .5);;
+  border: 1px solid 	#727272;
+  background:	#727272;
   color: #FFFFFF;
 }
+
 .footer {
     margin-top: auto;
     height: 113px;
@@ -507,22 +508,6 @@ body {
   background-color: rgba(255, 255, 255, .9);
 }
 
-.form-field small {
-  color: #dc3545;
-}
-
-.form-field.error input {
-  border-color: #dc3545;
-}
-
-.form-field.success input {
-  border-color: #FFFFFF;
-}
-
-.application-form.extra-height {
-  height: 330px;
-}
-
 @media (max-width: 700px) {
   :root {
     --boundary-padding: 21px;
@@ -641,10 +626,6 @@ body {
     height: 370px;
     margin-top: 114.31px;
     margin-bottom: 0px;
-  }
-
-  .application-form.extra-height {
-    height: 394.49px;
   }
 
   .application-form span {

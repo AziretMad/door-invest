@@ -5,8 +5,6 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>    
 <body>
@@ -80,7 +78,7 @@
         </div>
 
         <script type="text/javascript">var submitted = false</script>
-        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted) {Swal.fire('Good job!','You clicked the button!','success')}"></iframe>
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted) {onSubmit()}"></iframe>
 
         <form class="application-form" id="form" action="https://docs.google.com/forms/d/e/1FAIpQLScs16wxJWnm8MYhNCMUrguuyVfiyw2HZeme3sh6UrwfAWONTg/formResponse"
         method="post" target="hiddenConfirm" onsubmit="submitted=true">
@@ -103,13 +101,6 @@
             </div>
         </footer>
     </div>
-
-    <script src="sweetalert2.min.js"></script>
-    <script>
-        function popup() {
-            Swal.fire('Good job!','You clicked the button!','success')
-        }
-    </script>
     <script src="script.js" defer></script>
 </body>
 </html>

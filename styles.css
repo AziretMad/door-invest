@@ -443,7 +443,7 @@ body {
   border-radius: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size);
@@ -452,7 +452,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #9f9f9f;
   line-height: 0;
   transition: background-color 150ms ease-in-out;
 }

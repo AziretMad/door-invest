@@ -10,7 +10,7 @@ body {
     font-family: CeraPro;
     overflow-x: hidden;
     --scrollbar-size: calc(100vw - 100%);
-    min-width: 320px;
+    min-width: 390px;
 }
 .navbar{
     overflow: hidden;

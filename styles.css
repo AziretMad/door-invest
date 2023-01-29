@@ -9,7 +9,8 @@ body {
     margin: 0px;
     font-family: CeraPro;
     overflow-x: hidden;
-    --scrollbar-size: calc(100vw - 100%)
+    --scrollbar-size: calc(100vw - 100%);
+    min-width: 320px;
 }
 .navbar{
     overflow: hidden;
@@ -346,7 +347,7 @@ body {
 
 .slider > img {
   flex: 0 0 calc(100% / var(--items-per-screen));
-  max-width: 270px;
+  max-width: calc(100% / var(--items-per-screen));
   padding: var(--img-gap);
   border-radius: 1rem;
   cursor: pointer;
@@ -430,17 +431,11 @@ body {
   .slider {
     --items-per-screen: 2;
   }
-  .slider > img {
-    max-width: 230px;
-  }
 }
 
 @media (max-width: 500px) {
   .slider {
     --items-per-screen: 1;
-  }
-  .slider > img {
-    max-width: 230px;
   }
 }
   
@@ -516,6 +511,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  .slider {
+    --items-per-screen: 1;
+  }
   :root {
     --boundary-padding: 21px;
   }

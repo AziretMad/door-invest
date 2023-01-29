@@ -346,6 +346,7 @@ body {
 
 .slider > img {
   flex: 0 0 calc(100% / var(--items-per-screen));
+  width: 100%;
   max-width: calc(100% / var(--items-per-screen));
   padding: var(--img-gap);
   border-radius: 1rem;

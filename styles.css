@@ -512,6 +512,7 @@ body {
 @media (max-width: 700px) {
   .slider {
     --items-per-screen: 1;
+    max-width: 220px!important;
   }
   :root {
     --boundary-padding: 21px;
